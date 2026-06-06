@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Catchub</title>
+<link rel="icon" type="image/x-icon" href="/images/favicon.jpg">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f3f3f3;
+    color:#333;
+    overflow-x:hidden;
+}
+
+.container{
+    width:100%;
+}
+
+/* Main Content Width */
+
+.hero,
+.feature{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* Hero Section */
+
+.hero{
+    min-height:75vh;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:50px;
+    padding:80px 0;
+    background:#fff;
+    border-radius:0 0 120px 120px;
+}
+
+.hero-text{
+    flex:1;
+}
+
+.logo img{
+    width:260px;
+    margin-bottom:15px;
+}
+
+.hero-text h2{
+    font-size:28px;
+    letter-spacing:5px;
+    margin-bottom:10px;
+    font-weight:600;
+}
+
+.hero-text p{
+    font-size:18px;
+    color:#888;
+    margin-bottom:30px;
+}
+
+.store-buttons{
+    display:flex;
+    gap:15px;
+}
+
+.store-buttons a{
+    transition:.3s;
+}
+
+.store-buttons a:hover{
+    transform:translateY(-4px);
+}
+
+.store-buttons img{
+    width:140px;
+}
+
+.hero-image{
+    flex:1;
+    text-align:center;
+}
+
+.hero-image img{
+    width:100%;
+    max-width:500px;
+    filter:drop-shadow(0 12px 25px rgba(0,0,0,.15));
+}
+
+/* Feature Sections */
+
+.feature{
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:80px;
+    padding:120px 0;
+    z-index:1;
+}
+
+.feature:nth-child(even){
+    flex-direction:row-reverse;
+}
+
+/* Curved Background Effect */
+
+.feature::before{
+    content:"";
+    position:absolute;
+    top:-60px;
+    left:-15%;
+    width:130%;
+    height:140px;
+    background:#fff;
+    border-radius:0 0 50% 50%;
+    z-index:-1;
+}
+
+.feature::after{
+    content:"";
+    position:absolute;
+    bottom:-60px;
+    left:-15%;
+    width:130%;
+    height:140px;
+    background:#fff;
+    border-radius:50% 50% 0 0;
+    z-index:-1;
+}
+
+.feature-image,
+.feature-content{
+    flex:1;
+}
+
+.feature-image{
+    text-align:center;
+}
+
+.feature-image img{
+    width:100%;
+    max-width:450px;
+    filter:drop-shadow(0 10px 20px rgba(0,0,0,.12));
+}
+
+.feature-content{
+    text-align:center;
+}
+
+.feature-content h2{
+    font-size:34px;
+    letter-spacing:8px;
+    margin-bottom:20px;
+    font-weight:500;
+}
+
+.feature-content p{
+    font-size:20px;
+    color:#8c8c8c;
+    line-height:1.8;
+}
+
+/* Future Icons */
+
+.vector-img{
+    width:100%;
+    max-width:500px;
+    opacity:.25;
+    margin-bottom:20px;
+}
+
+/* Footer */
+
+.footer{
+    text-align:center;
+    padding:100px 20px 60px;
+    background:#fff;
+    border-radius:120px 120px 0 0;
+    margin-top:80px;
+}
+
+.footer h3{
+    margin-bottom:25px;
+    font-weight:500;
+}
+
+.footer-buttons{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    margin-bottom:30px;
+}
+
+.footer-buttons a{
+    transition:.3s;
+}
+
+.footer-buttons a:hover{
+    transform:translateY(-4px);
+}
+
+.footer-buttons img{
+    width:140px;
+}
+
+.contact{
+    color:#888;
+    margin-bottom:25px;
+    font-size:16px;
+}
+
+.contact a{
+    color:#3498db;
+    text-decoration:none;
+}
+
+.contact a:hover{
+    text-decoration:underline;
+}
+
+.footer-logo img{
+    width:120px;
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+.hero,
+.feature,
+.feature:nth-child(even){
+    flex-direction:column;
+    text-align:center;
+}
+
+.hero{
+    min-height:auto;
+    padding:40px 20px;
+    border-radius:0 0 60px 60px;
+}
+
+.feature{
+    padding:80px 0;
+}
+
+.feature::before,
+.feature::after{
+    height:80px;
+}
+
+.footer{
+    border-radius:60px 60px 0 0;
+}
+
+.logo img{
+    width:220px;
+}
+
+.hero-text h2{
+    font-size:22px;
+}
+
+.feature-content h2{
+    font-size:28px;
+}
+
+.feature-content p{
+    font-size:17px;
+}
+
+.hero-image img,
+.feature-image img{
+    width:90%;
+}
+
+.store-buttons,
+.footer-buttons{
+    justify-content:center;
+    flex-wrap:wrap;
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- HERO SECTION -->
+
+    <section class="hero">
+
+        <div class="hero-text">
+
+            <div class="logo">
+                <img src="images/logo.png" alt="Catchub Logo">
+            </div>
+
+            <h2>WATCH. COMMUNICATE. CREATE.</h2>
+
+            <p>Everything you need to socialise.</p>
+
+            <div class="store-buttons">
+
+                <a href="#">
+                    <img src="images/play_store.png" alt="Google Play">
+                </a>
+
+                <a href="#">
+                    <img src="images/app_store.png" alt="App Store">
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="hero-image">
+            <img src="images/top_screens.png" alt="App Screens">
+        </div>
+
+    </section>
+
+    <!-- CHANNELS -->
+
+    <section class="feature section-white">
+
+        <div class="feature-content">
+
+            <h2>CHANNELS</h2>
+
+            <p>
+                Enjoy the videos and music you love.
+                Create your own business or entertainment
+                channel.
+            </p>
+
+        </div>
+
+        <div class="feature-image">
+            <img src="images/sec_screens.png" alt="Channels">
+        </div>
+
+        
+
+    </section>
+
+    <!-- MESSAGES -->
+
+    <section class="feature section-white">
+
+        <div class="feature-content">
+
+            <h2>MESSAGES</h2>
+
+            <p>
+                Communicate seamlessly.
+                Create your own professional
+                or social group chat.
+            </p>
+
+        </div>
+
+        <div class="feature-image">
+            <img src="images/thhh_screens.png" alt="Messages">
+        </div>
+
+        
+    </section>
+
+    <!-- FUTURE -->
+
+    <section class="feature section-white">
+
+        <div class="feature-content">
+
+            <img src="images/vectors.png" width="300"
+                 alt="Future Icons"
+                 class="vector-img">
+
+            <h2>IN FUTURE</h2>
+
+            <p>
+                Communicate seamlessly.
+                Create your own professional
+                or social group chat.
+            </p>
+
+        </div>
+
+        <div class="feature-image">
+            <img src="images/for_screens.png" alt="Future Features">
+        </div>
+
+        
+
+    </section>
+
+</div>
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+    <h3>For download click here:</h3>
+
+    <div class="footer-buttons">
+
+        <a href="#">
+            <img src="images/play_store.png" alt="Google Play">
+        </a>
+
+        <a href="#">
+            <img src="images/app_store.png" alt="App Store">
+        </a>
+
+    </div>
+
+    <div class="contact">
+        Any questions? Feel free to
+        <a href="#">CONTACT US</a>
+    </div>
+
+    <div class="footer-logo">
+        <img src="images/peratude.png" alt="Peratude">
+    </div>
+
+</footer>
+
+</body>
+</html>
