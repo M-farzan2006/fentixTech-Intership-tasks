@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Shop — Furnitur</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="nav">
+  <div class="container nav__row">
+    <button class="nav__menu-toggle" data-menu-toggle aria-label="Toggle menu" aria-expanded="false">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18" stroke-linecap="round"/></svg>
+    </button>
+    <a href="index.html" class="nav__logo">
+      <strong>Furnitur</strong>
+      <span>Your future interior</span>
+    </a>
+    <nav class="nav__links" data-nav-menu>
+      <a href="index.html">Home</a>
+      <a href="shop.html" class="is-active">Shop</a>
+      <a href="index.html#blogs">Blog</a>
+      <a href="index.html#about">About Us</a>
+    </nav>
+    <form class="nav__search" data-nav-search role="search">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3" stroke-linecap="round"/></svg>
+      <input type="search" placeholder="Search something" aria-label="Search products" />
+    </form>
+    <div class="nav__actions">
+      <a href="shop.html?category=On+Sale" class="nav__icon-link">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7.5-4.6-10-9.3C.4 8 2 4.5 5.6 4c2-.3 3.9.7 5 2.3 1.1-1.6 3-2.6 5-2.3 3.6.5 5.2 4 3.6 7.7-2.5 4.7-10 9.3-10 9.3Z"/></svg>
+        Love
+      </a>
+      <a href="cart.html" class="nav__icon-link">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7h16l-1.5 11.5a2 2 0 0 1-2 1.5H7.5a2 2 0 0 1-2-1.5L4 7Z"/><path d="M8 7V6a4 4 0 0 1 8 0v1" stroke-linecap="round"/></svg>
+        Cart
+        <span class="nav__badge is-hidden" data-cart-count>0</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+    <nav class="breadcrumb"><a href="index.html">Home</a> / Shop</nav>
+    <div class="page-head">
+      <span class="eyebrow">Full catalog</span>
+      <h1>Shop All Furniture</h1>
+      <p>Filter by category or search by name — updates instantly, no reload needed.</p>
+    </div>
+
+    <div class="shop-toolbar">
+      <div class="shop-toolbar__chips">
+        <button class="chip" data-category-chip="All">All</button>
+        <button class="chip" data-category-chip="On Sale">On Sale</button>
+        <button class="chip" data-category-chip="Sofa">Sofa</button>
+        <button class="chip" data-category-chip="Chair">Chair</button>
+        <button class="chip" data-category-chip="Table">Table</button>
+        <button class="chip" data-category-chip="Lighting">Lighting</button>
+        <button class="chip" data-category-chip="Decor">Decor</button>
+      </div>
+      <div class="shop-toolbar__search">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3" stroke-linecap="round"/></svg>
+        <input type="search" placeholder="Search products…" data-shop-search aria-label="Search products" />
+      </div>
+    </div>
+
+    <p class="shop-result-count" data-result-count></p>
+
+    <div class="product-grid product-grid--4" data-shop-grid style="margin-bottom:96px;"></div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <strong style="font-family:var(--font-display); font-size:22px;">Furnitur</strong>
+        <p>A furniture gallery featuring sleek designs and innovative materials that seamlessly blend form and function.</p>
+      </div>
+      <div>
+        <h4>Customer Service</h4>
+        <ul>
+          <li><a href="#">Help &amp; FAQs</a></li>
+          <li><a href="#">Return &amp; Refund</a></li>
+          <li><a href="#">Shipping Policy</a></li>
+          <li><a href="#">Customs and Taxes</a></li>
+          <li><a href="#">Customer Reviews</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About Furnitur</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Special Deals &amp; Offers</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Help Center</h4>
+        <ul>
+          <li><a href="#">Order Information</a></li>
+          <li><a href="#">Shipping Options</a></li>
+          <li><a href="#">International Shipping</a></li>
+          <li><a href="#">Payment Options</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Return &amp; Warranty</h4>
+        <ul>
+          <li><a href="#">Returns &amp; Exchange Policy</a></li>
+          <li><a href="#">Returns Center</a></li>
+          <li><a href="#">Warranty Policy</a></li>
+          <li><a href="#">Warranty Registration</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>Furnitur © Copyright 2026, Inc. All rights reserved</span>
+      <div class="footer__social">
+        <a href="#" aria-label="Facebook">FB</a>
+        <a href="#" aria-label="Twitter">TW</a>
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="Pinterest">PT</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/render.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/shop.js"></script>
+</body>
+</html>
