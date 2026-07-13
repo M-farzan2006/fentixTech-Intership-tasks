@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muhammad Farzan — Full-Stack Web Developer</title>
+<meta name="description" content="Portfolio of Muhammad Farzan, Full-Stack Web Developer based in Karachi, Pakistan.">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!-- Bootstrap 5 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===== Custom Cursor Dot (decorative, desktop only) ===== -->
+<div class="cursor-dot" id="cursorDot"></div>
+
+<!-- ===== Loader ===== -->
+<div class="loader" id="loader">
+  <div class="loader-code">
+    <span>&gt;</span> booting_portfolio<span class="blink">_</span>
+  </div>
+</div>
+
+<!-- ===== Navbar ===== -->
+<nav class="navbar navbar-expand-lg fixed-top custom-navbar" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="#home">
+      <span class="brand-mono">&lt;</span>Farzan<span class="brand-mono">/&gt;</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-label="Toggle navigation">
+      <span class="toggler-bar"></span>
+      <span class="toggler-bar"></span>
+      <span class="toggler-bar"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home"><span class="nav-index">01</span>Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about"><span class="nav-index">02</span>About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills"><span class="nav-index">03</span>Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects"><span class="nav-index">04</span>Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experience"><span class="nav-index">05</span>Experience</a></li>
+        <li class="nav-item"><a class="nav-link btn-contact" href="#contact"><span class="nav-index">06</span>Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== Hero / Home ===== -->
+<header id="home" class="hero-section">
+  <div class="hero-bg-grid"></div>
+  <div class="container hero-container">
+    <div class="row align-items-center gy-5">
+      <div class="col-lg-6" data-animate="fade-up">
+        <p class="eyebrow-comment">/* hello world */</p>
+        <h1 class="hero-title">Muhammad <span class="text-accent">Farzan</span></h1>
+        <div class="hero-role-line">
+          <span class="prompt-symbol">&gt;</span>
+          <span id="typedRole" class="typed-role"></span><span class="typed-cursor">|</span>
+        </div>
+        <p class="hero-desc">
+          I design and build fast, accessible web experiences — from pixel-perfect
+          interfaces to the APIs that power them. Based in Karachi, Pakistan.
+        </p>
+        <div class="hero-cta d-flex flex-wrap gap-3">
+          <a href="#projects" class="btn btn-accent-fill">View My Work <i class="bi bi-arrow-down-right"></i></a>
+          <a href="#contact" class="btn btn-accent-outline">Let's Talk</a>
+        </div>
+        <div class="hero-stats row mt-5 gx-4">
+          <div class="col-4" data-counter="15"><span class="stat-num">0</span><span class="stat-plus">+</span><p>Projects Built</p></div>
+          <div class="col-4" data-counter="2"><span class="stat-num">0</span><span class="stat-plus">+</span><p>Years Coding</p></div>
+          <div class="col-4" data-counter="8"><span class="stat-num">0</span><span class="stat-plus">+</span><p>Happy Clients</p></div>
+        </div>
+      </div>
+      <div class="col-lg-6" data-animate="fade-left">
+        <div class="editor-window">
+          <div class="editor-titlebar">
+            <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+            <span class="editor-filename">farzan.js</span>
+          </div>
+          <pre class="editor-code"><code><span class="c-key">const</span> <span class="c-var">developer</span> = {
+  <span class="c-prop">name</span>: <span class="c-str">'Muhammad Farzan'</span>,
+  <span class="c-prop">role</span>: <span class="c-str">'Full-Stack Developer'</span>,
+  <span class="c-prop">location</span>: <span class="c-str">'Karachi, PK'</span>,
+  <span class="c-prop">stack</span>: [<span class="c-str">'React'</span>, <span class="c-str">'Node'</span>, <span class="c-str">'MongoDB'</span>],
+  <span class="c-prop">hireable</span>: <span class="c-key">true</span>,
+  <span class="c-prop">sayHi</span>: () <span class="c-key">=&gt;</span> <span class="c-str">'let's build something!'</span>
+};</code></pre>
+          <div class="editor-avatar-wrap">
+            <img src="https://i.pravatar.cc/300?img=13" alt="Muhammad Farzan portrait" class="editor-avatar">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a href="#about" class="scroll-indicator" aria-label="Scroll to About section">
+    <span>scroll</span>
+    <i class="bi bi-mouse2"></i>
+  </a>
+</header>
+
+<!-- ===== About ===== -->
+<section id="about" class="section section-light">
+  <div class="container">
+    <p class="eyebrow-comment" data-animate="fade-up">/* About */</p>
+    <h2 class="section-title" data-animate="fade-up">Who I Am</h2>
+    <div class="row align-items-center gy-5 mt-4">
+      <div class="col-lg-5" data-animate="fade-right">
+        <div class="about-photo-wrap">
+          <img src="https://picsum.photos/seed/farzan-workspace/600/700" alt="Muhammad Farzan at his desk" class="about-photo">
+          <div class="about-badge">
+            <i class="bi bi-code-slash"></i>
+            <div>
+              <strong>2+ yrs</strong>
+              <span>Experience</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-7" data-animate="fade-left">
+        <h3 class="about-heading">Full-Stack Developer &amp; Data Science Graduate</h3>
+        <p class="about-text">
+          I'm Muhammad Farzan, a full-stack web developer from Karachi, Pakistan, currently
+          finishing my BS in Data Science at Sir Syed University of Engineering and Tecnology. I care about the details most
+          people skip — smooth transitions, sensible spacing, code that's easy to read six
+          months later.
+        </p>
+        <p class="about-text">
+          My path started with tinkering on WordPress sites for local shops, and grew into
+          building full production apps with React, Node.js and MongoDB. I like projects
+          that mix a real interface problem with a real backend challenge.
+        </p>
+        <div class="row g-4 mt-2">
+          <div class="col-sm-6">
+            <div class="info-item"><i class="bi bi-mortarboard"></i><div><strong>Education</strong><span>BS Data Science</span></div></div>
+          </div>
+          <div class="col-sm-6">
+            <div class="info-item"><i class="bi bi-geo-alt"></i><div><strong>Location</strong><span>Karachi, Pakistan</span></div></div>
+          </div>
+          <div class="col-sm-6">
+            <div class="info-item"><i class="bi bi-briefcase"></i><div><strong>Freelance</strong><span>Available part-time</span></div></div>
+          </div>
+          <div class="col-sm-6">
+            <div class="info-item"><i class="bi bi-translate"></i><div><strong>Languages</strong><span>English, Urdu</span></div></div>
+          </div>
+        </div>
+        <a href="#contact" class="btn btn-accent-fill mt-4">Download Resume <i class="bi bi-download"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Skills ===== -->
+<section id="skills" class="section section-dark">
+  <div class="container">
+    <p class="eyebrow-comment" data-animate="fade-up">/* Skills */</p>
+    <h2 class="section-title" data-animate="fade-up">Tools I Reach For</h2>
+    <p class="section-sub" data-animate="fade-up">A working toolkit built through coursework, freelance work and a lot of late-night debugging.</p>
+
+    <div class="row mt-5 gy-5">
+      <div class="col-lg-6" data-animate="fade-up">
+        <h4 class="skills-group-title"><i class="bi bi-laptop"></i> Frontend</h4>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>HTML5 &amp; CSS3</span><span>95%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="95"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>JavaScript (ES6+)</span><span>90%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="90"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>React.js</span><span>85%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>Bootstrap / Tailwind CSS</span><span>92%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="92"></div></div>
+        </div>
+      </div>
+      <div class="col-lg-6" data-animate="fade-up">
+        <h4 class="skills-group-title"><i class="bi bi-server"></i> Backend &amp; Tools</h4>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>Node.js &amp; Express</span><span>80%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="80"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>MongoDB / SQL</span><span>78%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="78"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>Git &amp; GitHub</span><span>88%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="88"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>Figma / UI Design</span><span>70%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="70"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="skill-tags mt-5" data-animate="fade-up">
+      <span class="tag tag-1">Python</span>
+      <span class="tag tag-2">REST APIs</span>
+      <span class="tag tag-3">Firebase</span>
+      <span class="tag tag-1">PHP</span>
+      <span class="tag tag-2">Chart.js</span>
+      <span class="tag tag-3">Responsive Design</span>
+      <span class="tag tag-1">Vercel / Netlify</span>
+      <span class="tag tag-2">Agile / Scrum</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Projects ===== -->
+<section id="projects" class="section section-light">
+  <div class="container">
+    <p class="eyebrow-comment" data-animate="fade-up">/* Projects */</p>
+    <h2 class="section-title" data-animate="fade-up">Selected Work</h2>
+    <p class="section-sub" data-animate="fade-up">Four projects that shaped how I build for the web.</p>
+
+    <div class="row mt-5 g-4">
+
+      <div class="col-md-6" data-animate="fade-up">
+        <div class="project-card">
+          <div class="project-img-wrap">
+            <img src="https://picsum.photos/seed/ecotrack-app/700/500" alt="EcoTrack sustainability dashboard screenshot" class="project-img">
+            <div class="project-overlay">
+              <a href="#" class="project-icon-link" aria-label="Live demo of EcoTrack"><i class="bi bi-box-arrow-up-right"></i></a>
+              <a href="#" class="project-icon-link" aria-label="GitHub repository for EcoTrack"><i class="bi bi-github"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h4>EcoTrack</h4>
+            <p>A sustainability dashboard that helps households track energy usage and carbon footprint with live charts.</p>
+            <div class="project-tags">
+              <span>React</span><span>Node.js</span><span>MongoDB</span><span>Chart.js</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6" data-animate="fade-up">
+        <div class="project-card">
+          <div class="project-img-wrap">
+            <img src="https://picsum.photos/seed/shopease-store/700/500" alt="ShopEase e-commerce storefront screenshot" class="project-img">
+            <div class="project-overlay">
+              <a href="#" class="project-icon-link" aria-label="Live demo of ShopEase"><i class="bi bi-box-arrow-up-right"></i></a>
+              <a href="#" class="project-icon-link" aria-label="GitHub repository for ShopEase"><i class="bi bi-github"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h4>ShopEase</h4>
+            <p>A responsive e-commerce storefront with cart, checkout flow, and an admin panel for managing inventory.</p>
+            <div class="project-tags">
+              <span>Bootstrap</span><span>PHP</span><span>MySQL</span><span>JavaScript</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6" data-animate="fade-up">
+        <div class="project-card">
+          <div class="project-img-wrap">
+            <img src="https://picsum.photos/seed/taskflow-kanban/700/500" alt="TaskFlow kanban board screenshot" class="project-img">
+            <div class="project-overlay">
+              <a href="#" class="project-icon-link" aria-label="Live demo of TaskFlow"><i class="bi bi-box-arrow-up-right"></i></a>
+              <a href="#" class="project-icon-link" aria-label="GitHub repository for TaskFlow"><i class="bi bi-github"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h4>TaskFlow</h4>
+            <p>A drag-and-drop Kanban task manager with real-time sync across devices, built for small teams.</p>
+            <div class="project-tags">
+              <span>JavaScript</span><span>Firebase</span><span>Tailwind CSS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6" data-animate="fade-up">
+        <div class="project-card">
+          <div class="project-img-wrap">
+            <img src="https://picsum.photos/seed/weathernow-forecast/700/500" alt="WeatherNow forecast app screenshot" class="project-img">
+            <div class="project-overlay">
+              <a href="#" class="project-icon-link" aria-label="Live demo of WeatherNow"><i class="bi bi-box-arrow-up-right"></i></a>
+              <a href="#" class="project-icon-link" aria-label="GitHub repository for WeatherNow"><i class="bi bi-github"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h4>WeatherNow</h4>
+            <p>A weather forecast app with animated conditions, 5-day outlook, and location search powered by a public API.</p>
+            <div class="project-tags">
+              <span>JavaScript</span><span>REST API</span><span>Chart.js</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== Experience / Education ===== -->
+<section id="experience" class="section section-dark">
+  <div class="container">
+    <p class="eyebrow-comment" data-animate="fade-up">/* Experience */</p>
+    <h2 class="section-title" data-animate="fade-up">Where I've Been</h2>
+
+    <div class="row mt-5 gy-5">
+      <div class="col-lg-6" data-animate="fade-right">
+        <h4 class="timeline-col-title"><i class="bi bi-briefcase-fill"></i> Work Experience</h4>
+        <div class="timeline">
+          <div class="timeline-item">
+            <span class="timeline-dot"></span>
+            <div class="timeline-content">
+              <span class="timeline-date">Jun 2025 — Aug 2025</span>
+              <h5>Frontend Developer Intern</h5>
+              <p class="timeline-org">PixelCraft Digital Agency, Karachi</p>
+              <p>Built responsive landing pages for client campaigns and improved page load speed by 30% through asset optimization.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-dot"></span>
+            <div class="timeline-content">
+              <span class="timeline-date">2024 — 2025</span>
+              <h5>Web Developer Intern</h5>
+              <p class="timeline-org">Fentix Tech</p>
+              <p>Delivered 10+ websites for small businesses, handling everything from UI design to deployment.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-dot"></span>
+            <div class="timeline-content">
+              <span class="timeline-date">2023 — 2024</span>
+              <h5>Student Coordinator, ACM Chapter</h5>
+              <p class="timeline-org">FAST-NUCES Karachi</p>
+              <p>Organized web-dev workshops for 100+ students and mentored juniors on Git &amp; JavaScript basics.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6" data-animate="fade-left">
+        <h4 class="timeline-col-title"><i class="bi bi-mortarboard-fill"></i> Education</h4>
+        <div class="timeline">
+          <div class="timeline-item">
+            <span class="timeline-dot"></span>
+            <div class="timeline-content">
+              <span class="timeline-date">2021 — 2025</span>
+              <h5>BS Data Science</h5>
+              <p class="timeline-org">Sir Syed University of Engineering and Technology, Karachi</p>
+              <p>CGPA 3.6/4.0. Coursework: Web Engineering, Data Structures, Databases, Software Design.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-dot"></span>
+            <div class="timeline-content">
+              <span class="timeline-date">2019 — 2021</span>
+              <h5>Intermediate, Pre-Engineering</h5>
+              <p class="timeline-org">Karachi Board of Intermediate Education</p>
+              <p>Completed with distinction, secured position among top 5% of the batch.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-dot"></span>
+            <div class="timeline-content">
+              <span class="timeline-date">2023</span>
+              <h5>Meta Front-End Developer Certificate</h5>
+              <p class="timeline-org">Coursera</p>
+              <p>Completed a 9-course specialization covering React, UX and version control.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Contact ===== -->
+<section id="contact" class="section section-light">
+  <div class="container">
+    <p class="eyebrow-comment" data-animate="fade-up">/* Contact */</p>
+    <h2 class="section-title" data-animate="fade-up">Let's Build Something</h2>
+    <p class="section-sub" data-animate="fade-up">Have a project in mind, or just want to say hi? My inbox is open.</p>
+
+    <div class="row mt-5 gy-5">
+      <div class="col-lg-5" data-animate="fade-right">
+        <div class="contact-info-card">
+          <div class="contact-info-row">
+            <i class="bi bi-envelope-fill"></i>
+            <div><span>Email</span><strong>muhammadfarzan810@gmail.com</strong></div>
+          </div>
+          <div class="contact-info-row">
+            <i class="bi bi-telephone-fill"></i>
+            <div><span>Phone</span><strong>+92 300 1234567</strong></div>
+          </div>
+          <div class="contact-info-row">
+            <i class="bi bi-geo-alt-fill"></i>
+            <div><span>Location</span><strong>Karachi, Pakistan</strong></div>
+          </div>
+          <div class="social-links">
+            <a href="#" aria-label="GitHub profile"><i class="bi bi-github"></i></a>
+            <a href="#" aria-label="LinkedIn profile"><i class="bi bi-linkedin"></i></a>
+            <a href="#" aria-label="X (Twitter) profile"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" aria-label="Instagram profile"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-7" data-animate="fade-left">
+        <form id="contactForm" class="contact-form" novalidate>
+          <div class="row g-4">
+            <div class="col-md-6">
+              <label for="nameInput" class="form-label">Name</label>
+              <input type="text" class="form-control" id="nameInput" placeholder="Your name" required>
+              <div class="invalid-feedback">Please enter your name.</div>
+            </div>
+            <div class="col-md-6">
+              <label for="emailInput" class="form-label">Email</label>
+              <input type="email" class="form-control" id="emailInput" placeholder="you@example.com" required>
+              <div class="invalid-feedback">Please enter a valid email.</div>
+            </div>
+            <div class="col-12">
+              <label for="subjectInput" class="form-label">Subject</label>
+              <input type="text" class="form-control" id="subjectInput" placeholder="What's this about?" required>
+              <div class="invalid-feedback">Please enter a subject.</div>
+            </div>
+            <div class="col-12">
+              <label for="messageInput" class="form-label">Message</label>
+              <textarea class="form-control" id="messageInput" rows="5" placeholder="Tell me about your project..." required></textarea>
+              <div class="invalid-feedback">Please enter a message.</div>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-accent-fill w-100 w-sm-auto" id="submitBtn">
+                <span class="btn-text">Send Message</span>
+                <i class="bi bi-send-fill"></i>
+              </button>
+            </div>
+          </div>
+        </form>
+        <div class="form-success-toast" id="formToast">
+          <i class="bi bi-check-circle-fill"></i> Message sent — I'll get back to you soon!
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer class="site-footer">
+  <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+    <p class="mb-0">&copy; <span id="year"></span> Muhammad Farzan. Built with HTML, CSS &amp; JavaScript.</p>
+    <a href="#home" class="back-to-top" aria-label="Back to top"><i class="bi bi-arrow-up"></i></a>
+  </div>
+</footer>
+
+<!-- Bootstrap Bundle JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Custom JS -->
+<script src="js/script.js"></script>
+</body>
+</html>
